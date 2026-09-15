@@ -1,0 +1,22 @@
+{
+  "name": "telegram-calc-bot",
+  "version": "1.0.0",
+  "description": "Telegram scientific calculator bot - inline keyboard, webhook, Redis (Upstash) state, per-chat leading+trailing throttle",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "set-webhook": "node scripts/setWebhook.js",
+    "delete-webhook": "node scripts/deleteWebhook.js"
+  },
+  "dependencies": {
+    "@upstash/redis": "^1.34.0",
+    "dotenv": "^17.4.2",
+    "express": "^4.19.2",
+    "mathjs": "^13.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
